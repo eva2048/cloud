@@ -3,6 +3,11 @@
 		margin: 20px 40px;
 	}
 	
+	.personalInfo ul {
+		width: 60%;
+		float: left;
+	}
+	
 	.personalInfo ul li {
 		line-height: 40px;
 	}
@@ -21,7 +26,7 @@
 	}
 	
 	.personalInfoRight span {
-		margin-right: 35px;
+		margin-right: 20px;
 	}
 	
 	.personalInfo .infoTitle {
@@ -29,12 +34,39 @@
 		font-weight: bold;
 		color: #313131;
 	}
+	
+	.attachmentName {
+		float: left;
+		display: inline-block;
+		max-width: 200px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		margin-right: 0 !important;
+	}
+	
+	.history {
+		width: 40%;
+		min-height: 300px;
+	}
+	
+	.historyTitle {
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
+		color: #3884FE;
+		margin: 0 20px;
+	}
+	
+	.historyDetail ol {
+		margin: 10px 20px;
+	}
 </style>
 <div class="cmainBox">
 	<div class="titleBox fix">
-		<div class="title floatleft">个人资料</div>
+		<div class="title floatleft">申报详情</div>
 		<div class="floatright">
-			<a ui-sref="personalcenter.editInfo({leftnav:1})" href="" class="editInfo floatright">编辑资料</a>
+			<a ui-sref="personalcenter.declaration({leftnav:3})" href="" class="editInfo floatright">返回</a>
 		</div>
 	</div>
 	<div class="line"></div>
@@ -42,86 +74,82 @@
 		<div class="personalInfo">
 			<ul>
 				<li class="clearfix">
-					<div class=" floatleft infoTitle">
-						个人信息
-					</div>
-				</li>
-				<li class="clearfix">
 					<div class="personalInfoLeft floatleft">
-						姓名：
+						委托单位：
 					</div>
 					<div class="personalInfoRight floatleft">
-						张三
+						上海泽众
 					</div>
 				</li>
 				<li class="clearfix">
 					<div class="personalInfoLeft floatleft">
-						绑定手机：
+						被测产品：
 					</div>
-					<div ng-controller="modalCtrl" class="personalInfoRight floatleft">
-						<span class="tel">18612345675</span>
-						<a ng-click="open('changePhone')" href="" class="changeBind">修改绑定</a>
-						<a ng-click="open('changePwd')" href="" class="changePassword">修改密码</a>
+					<div class="personalInfoRight floatleft">
+						TCE
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						测试类型：
+					</div>
+					<div class="personalInfoRight floatleft">
+						自动化
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						产品类型：
+					</div>
+					<div class="personalInfoRight floatleft">
+						计算机软件
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						联系人：
+					</div>
+					<div class="personalInfoRight floatleft">
+						wxw012
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						联系电话：
+					</div>
+					<div class="personalInfoRight floatleft">
+						123456789
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						附件：
+					</div>
+					<div class="personalInfoRight floatleft">
+						<p><span class="attachmentName">123123132112312313211231231321.txt</span>
+							<a href="" class="a-blue">下载</a>
+						</p>
+						<p><span class="attachmentName">1231231321</span>
+							<a href="" class="a-blue">下载</a>
+						</p>
 					</div>
 				</li>
 			</ul>
-		</div>
-		<div class="personalInfo">
-			<ul>
-				<li class="clearfix">
-					<div class=" floatleft infoTitle">
-						业务信息
-					</div>
-				</li>
-				<li class="clearfix">
-					<div class="personalInfoLeft floatleft">
-						企业名称：
-					</div>
-					<div class="personalInfoRight floatleft">
-						泽众软件
-					</div>
-				</li>
-				<li class="clearfix">
-					<div class="personalInfoLeft floatleft">
-						职位：
-					</div>
-					<div class="personalInfoRight floatleft">
-						测试工程师
-					</div>
-				</li>
-				<li class="clearfix">
-					<div class="personalInfoLeft floatleft">
-						行业分类：
-					</div>
-					<div class="personalInfoRight floatleft">
-						软件开发
-					</div>
-				</li>
-				<li class="clearfix">
-					<div class="personalInfoLeft floatleft">
-						主营业务：
-					</div>
-					<div class="personalInfoRight floatleft">
-						软件开发
-					</div>
-				</li>
-				<li class="clearfix">
-					<div class="personalInfoLeft floatleft">
-						邮箱：
-					</div>
-					<div class="personalInfoRight floatleft">
-						4515156166@163.com
-					</div>
-				</li>
-				<li class="clearfix">
-					<div class="personalInfoLeft floatleft">
-						公司电话：
-					</div>
-					<div class="personalInfoRight floatleft">
-						029-45215156
-					</div>
-				</li>
-			</ul>
+			<div class="history floatright">
+				<div class="historyTitle">历史操作</div>
+				<div class="line"></div>
+				<div class="historyDetail">
+					<ol>
+						<li>
+							2017-10-10 14:22  张三（18612345678）进行了XXXXXXX都是 XXXXXsd的XXXXXXXXXXXXXXXXXXXX操作
+							
+						</li>
+						<li>
+							2017-10-10 14:22  张三（18612345678）进行XXXX操作
+						</li>
+					</ol>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

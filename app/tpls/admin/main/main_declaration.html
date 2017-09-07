@@ -1,0 +1,58 @@
+<div class="cmainBox" ng-controller="declarationCtrl">
+	<div class="titleBox fix">
+		<div class="title floatleft">我的申报</div>
+		<div class="searchBox floatright">
+			<input type="text" name="" placeholder="请输入产品名称或订单号">
+			<a href="">搜索</a>
+		</div>
+	</div>
+	<div class="line"></div>
+	<div class="contentBox">
+		<div class="launchedListBox">
+			<table class="defaultTable1 margint-20">
+				<tr>
+					<th style="width: 40px;"></th>
+					<th style="width: 18.84%;">委托单位</th>
+					<th style="width: 11.65%;">被测产品</th>
+					<th style="width: 9.15%;">测试类型</th>
+					<th style="width: 9.15%;">产品类型</th>
+					<th style="width: 9.15%;">提交人</th>
+					<th style="width: 15.15%;">提交时间</th>
+					<th style="width: 9.15%;">状态</th>
+					<th style="width: 15.84%;">操作</th>
+				</tr>
+				<tr ng-repeat="v in data.lists">
+					<td>{{v.num}}</td>
+					<td>{{v.client}}</td>
+					<td>{{v.product}}</td>
+					<td>{{v.testType}}</td>
+					<td>{{v.productType}}</td>
+					<td>{{v.submitter}}</td>
+					<td>{{v.submitTime}}</td>
+					<td>{{v.state}}</td>					
+					<td>
+						<a href="" class="a-blue" ui-sref="personalcenter.declarationDetail">查看详情</a> &nbsp;
+						<a href="" class="a-blue">编辑</a> &nbsp;
+						<a href="" class="a-blue">撤回</a> &nbsp;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="pageBox">
+            <div class="floatleft pageinfoBox">
+                <span>
+                    共180条，每页显示：
+                    <select>
+                        <option>10</option>
+                        <option>20</option>
+                    </select>
+                    &nbsp;&nbsp;条
+                </span>
+            </div>
+            <div class="floatright">
+                <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm embed-responsive-item" previous-text="上一页" next-text="下一页" first-text="首页" last-text="尾页" max-size="maxSize" rotate="false">
+                </pagination>
+            </div>
+        </div>
+	</div>
+</div>

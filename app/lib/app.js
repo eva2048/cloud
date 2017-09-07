@@ -407,7 +407,7 @@ define(['angular', 'router'], function() {
                             return deferred.promise;
                         }]
                     }
-                }) 
+                })                
                 /*订单详情*/
                 .state("personalcenter.myorderdetail",{
                     url:"/myorderdetail",
@@ -429,6 +429,48 @@ define(['angular', 'router'], function() {
                         }]
                     }
                 })  
+                 /*我的申报*/
+                .state("personalcenter.declaration",{
+                    url:"/declaration",
+                    views:{
+                        'right@personalcenter':{
+                            templateUrl:'../tpls/admin/main/main_declaration.html'
+                        }
+                    },      
+                    resolve:{
+                        loadCtrl:["$q",function($q){
+                            var deferred = $q.defer();
+                            //异步加载controller／directive/filter/service
+                            require([
+                                'js/controller/admin/declarationCtrl.js'
+                                ], function(controller) { 
+                                    deferred.resolve(); 
+                                });
+                            return deferred.promise;
+                        }]
+                    }
+                }) 
+//              申报详情
+                .state("personalcenter.declarationDetail",{
+                    url:"/declarationDetail",
+                    views:{
+                        'right@personalcenter':{
+                            templateUrl:'../tpls/admin/main/main_declaration_detail.html'
+                        }
+                    },      
+                    resolve:{
+                        loadCtrl:["$q",function($q){
+                            var deferred = $q.defer();
+                            //异步加载controller／directive/filter/service
+                            require([
+                                'js/controller/admin/declarationCtrl.js'
+                                ], function(controller) { 
+                                    deferred.resolve(); 
+                                });
+                            return deferred.promise;
+                        }]
+                    }
+                }) 
                 /*发票管理*/
                 .state("personalcenter.invoice",{
                     url:"/invoice",
