@@ -1,0 +1,122 @@
+<style type="text/css">
+</style>
+<div ng-controller="indexCtrl">
+    <div class="bannerBox" id="bannerBox" ng-mouseenter="cleartimer()" ng-mouseleave="starttimer()">
+        <div class="banner" ng-style="{marginLeft:a}">
+            <div class="bannerSlide" ng-repeat="v in bannerIndex">
+                <a href=""><img ng-src="./images/banner{{v}}.png"></a>
+            </div>
+        </div>
+        <div class="spanBox">
+            <span ng-class="{'current':$index==index}" ng-click="tabClick()" ng-repeat="v in bannerIndex"></span>
+        </div>
+    </div>
+    <div class="indexSection1Box">
+        <div class="indexSection1">
+            <h1>我们的服务优势</h1>
+            <div class="show01-a fix">
+                <div class="show01-a-a">
+                    <img class="floatleft" src="images/indexSection1_1.png">
+                    <div>
+                        <h2>Convenient（便捷）</h2>
+                        <p>不再为软硬件安装、环境配置、环境维护而烦恼
+                            <br>测试环境装配完备，立即可用
+                        </p>
+                    </div>
+                </div>
+                <div class="show01-a-a">
+                    <img class="floatleft" src="images/indexSection1_2.png">
+                    <div>
+                        <h2>Free（免费）</h2>
+                        <p>基础功能随心用（基本用户数和基本功能可免费使用）
+                            <br>无需投入服务器、网络设备，一键上云
+                        </p>
+                    </div>
+                </div>
+                <div class="show01-a-a">
+                    <img class="floatleft" src="images/indexSection1_3.png">
+                    <div>
+                        <h2>Stable（稳定）</h2>
+                        <p>高配服务器（双硬盘备份、raid1，7*24小时运行）
+                            <br>支持后台数据稳定运行
+                        </p>
+                    </div>
+                </div>
+                <div class="show01-a-a">
+                    <img class="floatleft" src="images/indexSection1_4.png">
+                    <div>
+                        <h2>Security （安全）</h2>
+                        <p>采用用户隔离、数据库隔离技术保障数据访问的安全
+                            <br>高端用户支持提供独立虚拟机
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="indexSection2Box">
+        <div class="indexSection2">
+            <div class="indexSection2Title">大客户定制解决方案</div>
+            <div class="fix">
+                <div class="indexSection2Content floatleft">
+                    <img class="indexSection2Cimg" src="../images/indexSection2Content_1.png">
+                    <h2 class="indexSection2Ctitle">公有云</h2>
+                    <p class="indexSection2Cp">通过远程虚拟桌面登录云端环境，快速为企业提供测试项目管理、自动化测试、性能测试等服务。您不再需要投入大量时间和成本去维护测试基础设施。</p>
+                    
+                </div>
+                <div class="indexSection2Content floatright">
+                    <img class="indexSection2Cimg" src="../images/indexSection2Content_2.png">
+                    <h2 class="indexSection2Ctitle">私有云</h2>
+                    <p class="indexSection2Cp">支持与企业内部服务器对接，私有化部署，为企业迅速搭建一个内网的云测试环境。实现企业测试数据私有化管理、对数据、安全性和服务质量的有效控制。</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="indexSection3Box">
+        <div class="products">
+            <ul>
+                <li>
+                    <div class="title fix">
+                        <img src="./images/index_products_1.png" class="left floatleft">
+                        <div class="right">
+                            <h1>TestCenter</h1>
+                            <h2>测试管理工具（TC）</h2>
+                        </div>
+                    </div>
+                    <p class="content">
+                        迅速建立完善的测试体系,规范测试流程； 提高测试效率与质量,实现对测试的过程管理； 提高测试工程的生产力。
+                    </p>
+                    <a class="btnlink" href="">立即使用</a>
+                </li>
+                <li>
+                    <div class="title fix">
+                        <img src="./images/index_products_2.png" class="left floatleft">
+                        <div class="right">
+                            <h1>AutoRunner</h1>
+                            <h2>自动化测试工具（AR）</h2>
+                        </div>
+                    </div>
+                    <p class="content">
+                        实现功能测试、回归测试的自动化；提高测试执行效率，降低测试人工成本。
+                    </p>
+                    <a class="btnlink" href="">立即使用</a>
+                </li>
+                <li>
+                    <div class="title fix">
+                        <img src="./images/index_products_3.png" class="left floatleft">
+                        <div class="right">
+                            <h1>PerformanceRunner</h1>
+                            <h2>性能测试工具（PR）</h2>
+                        </div>
+                    </div>
+                    <p class="content">
+                        最大限度地缩短测试时间；优化性能和加速应用系统的发布周期。
+                    </p>
+                    <a class="btnlink" href="">立即使用</a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+</div>

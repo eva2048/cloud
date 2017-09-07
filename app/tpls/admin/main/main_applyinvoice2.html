@@ -1,0 +1,70 @@
+<div class="cmainBox">
+    <div class="titleBox fix">
+        <div class="title floatleft">产品发票申请</div>
+    </div>
+    <div class="line"></div>
+    <div style="padding: 20px;font-size: 14px;">
+        <div>
+            <span class="c-blue f-bold marginr-5">1.选择需要发票的订单</span> ——
+            <span class="c-blue f-bold marginl-5 marginr-5">2.填写开票信息</span> ——
+            <span class="marginl-5 marginr-5">3.填写邮寄地址</span> ——
+            <span class="marginl-5 marginr-5">4.申请成功，快递签收</span>
+        </div>
+    </div>
+    <div class="line marginb-20"></div>
+    <div class="contentBox">
+        <div class="personalInfo">
+            <div class="defaultinputBox">
+                <div class="title floatleft">开具类型：</div>
+                <div class="floatleft inputradioBox">
+                    <input class="inputradio" ng-click="isprivate=false" checked="checked" type="radio" name="groupType">
+                    <span>企业</span>
+                </div>
+                <div class="floatleft inputradioBox">
+                    <input class="inputradio" ng-click="isprivate=true" type="radio" name="groupType">
+                    <span>个人</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">发票类型：</div>
+                <div class="floatleft inputradioBox">
+                    <input class="inputradio" ng-click="isprivate=false" checked="checked" type="radio" name="groupType">
+                    <span>普通增值税发票</span>
+                </div>
+                <div class="floatleft inputradioBox">
+                    <input class="inputradio" ng-click="isprivate=true" type="radio" name="groupType">
+                    <span>增值税专用发票</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">发票抬头：</div>
+                <input class="inputtext inputnormall" type="text" name="" style="width: 500px">
+                <span class="c-red error">长度不能超过15字符！</span>
+                <div class="clear"></div>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">纳税人识别号/统一社会征信代码：</div>
+                <input style="width: 355px" class="inputtext inputnormall" type="text" name="">
+                <span class="c-red error">长度不能超过15字符!</span>
+                <div class="clear"></div>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">开户行名称：</div>
+                <input style="width: 486px" class="inputtext inputnormall" type="text" name="">
+                <span class="c-red error">长度不能超过15字符！</span>
+                <div class="clear"></div>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">开户账号：</div>
+                <input style="width: 500px" class="inputtext inputnormall" type="text" name="">
+                <span class="c-red error">长度不能超过15字符！</span>
+                <div class="clear"></div>
+            </div>
+            <div class="fix margint-20 marginb-20">
+                <a ui-sref="personalcenter.applyinvoice.step3({leftnav:5})" href="" class="floatleft btn-modal btn-modal-blue">下一步</a>
+            </div>
+        </div>
+    </div>
+</div>

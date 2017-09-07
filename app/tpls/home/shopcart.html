@@ -1,0 +1,100 @@
+<style type="text/css">
+/* 购物车为空 */
+.emptyShopcart{
+    width: 300px;
+    margin: 100px auto;
+}
+.emptyShopcart img{
+    width: 80px;
+    margin-right: 20px;
+}
+.emptyShopcartRight{
+    margin-top: 22px;
+    font-size: 14px;
+}
+.emptyShopcartLink{
+    font-size: 12px;
+    color: #008bff;
+    line-height: 32px;
+}
+</style>
+<div class="shopcartBox">
+    <div class="shopcart1Box">
+        <div class="shopcart1">
+            <div class="shopcartTitle">
+                <h1>购物车</h1>
+            </div>
+            <div class="shopcartTable" ng-show="false">
+                <table class="defaultTable1">
+                    <tr>
+                        <th>
+                            <input type="checkbox" name="">
+                        </th>
+                        <th>产品名称</th>
+                        <th>产品规格</th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>金额</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="">
+                        </td>
+                        <td>测试管理工具TC</td>
+                        <td>产品规格信息</td>
+                        <td>￥188.00</td>
+                        <td>
+                            <div class="selectSpan fix">
+                                <a href="" class="disabledSpan">-</a>
+                                <input type="" name="" value="1">
+                                <a href="">+</a>
+                            </div>
+                        </td>
+                        <td><span class="c-blue f-bold">￥188.00</span></td>
+                        <td><a class="a-red" href="">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="">
+                        </td>
+                        <td>测试管理工具TC</td>
+                        <td>产品规格信息</td>
+                        <td>￥188.00</td>
+                        <td>
+                            <div class="selectSpan fix">
+                                <a href="" class="disabledSpan">-</a>
+                                <input type="" name="" value="1">
+                                <a href="">+</a>
+                            </div>
+                        </td>
+                        <td><span class="c-blue f-bold">￥188.00</span></td>
+                        <td><a class="a-red" href="">删除</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="shopcartTotal fix" ng-show="false">
+                <div class="floatright">
+                    <div class="floatright"><span class="count">2款产品</span><span class="tprice">共计：<strong class="c-blue">￥564.00</strong></span></div>
+                    <div class="clear"></div>
+                    <div class="marginb-10">
+                        <span class="c-red">如有销售专员为您服务，请选择：</span>
+                        <select class="selectnormall">
+                            <option>选择专员</option>
+                        </select>
+                    </div>
+                    <div class="floatright"><a href="" class="btn-blue2">提交订单</a></div>
+                </div>
+            </div>
+
+            <!-- 购物车为空 -->
+            <div class="emptyShopcart">
+                <img class="floatleft" src="../images/shopcartDrop_none.png">
+                <div class="floatleft emptyShopcartRight">
+                    <h1>购物车里还没有商品哦~</h1>
+                    <a href="" class="emptyShopcartLink">去看看吧~</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

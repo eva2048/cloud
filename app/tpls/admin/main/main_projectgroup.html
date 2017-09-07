@@ -1,0 +1,90 @@
+<div class="cmainBox" ng-controller="modalCtrl">
+    <div class="titleBox fix">
+        <div class="title floatleft">项目组管理</div>
+    </div>
+    <div class="line"></div>
+    <div class="contentBox">
+        <div class="buttonBox">
+            <a class="btn-blue" ng-click="open('joinProjectGroup')" href="">加入项目组</a>
+            <a class="btn-blue marginl-5" ng-click="open('createProjectGroup')" href="">创建项目组</a>
+        </div>
+        <div class="tableulBox">
+            <div class="defaultulBox floatleft" style="width: 405px">
+                <div class="ultitleBox">
+                    项目组（10）
+                    <div class="searchBox1 floatright">
+                        <input type="" name="">
+                        <a href=""><span class="glyphicon glyphicon-search"></span></a>
+                    </div>
+                </div>
+                <div class="ulcontentBox">
+                    <ul>
+                        <li class="current">
+                            <a href="">
+                                <span class="glyphicon glyphicon-user marginr-5 icon-blue1"></span><span class="glyphicon glyphicon-lock marginr-5 icon-blue1"></span>
+                            </a>泽众软件
+                            <a href="" class="floatright">
+                                <span class="glyphicon glyphicon-trash icon-gray2"></span>
+                            </a>
+                            <a href="" class="floatright marginr-10">
+                                <span class="glyphicon glyphicon-list-alt icon-gray1" ng-click="open('projectgroupInfo')"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="glyphicon glyphicon-user marginr-5 icon-blue1"></span>
+                            </a>泽众软件
+                            <a href="" class="floatright">
+                                <span class="glyphicon glyphicon-trash icon-gray2"></span>
+                            </a>
+                            <a href="" class="floatright marginr-10">
+                                <span class="glyphicon glyphicon-list-alt icon-gray1" ng-click="open('projectgroupInfo')"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="defaultulBox floatleft defaultulBox-right">
+                <div class="ultitleBox">
+                    项目组成员（12）
+                    <div class="iconBox floatright" ng-init="showsearch=false">
+                        <div ng-show="showsearch" class="searchBox1 floatleft">
+                            <input autofocus="autofocus" ng-blur="showsearch=false" type="" name="">
+                            <a href=""><span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                        <a class="floatleft" ng-click="showsearch=true" ng-hide="showsearch" href=""><span class="glyphicon glyphicon-search icon-gray1"></span></a>
+                        <a class="floatleft" title="批量分配角色" href="" ng-click="open('batchEditRole')"><span class="glyphicon glyphicon-edit icon-gray1 marginl-5"></span></a>
+                        <a class="floatleft" title="批量导入项目组" ng-click="open('batchJoinGroup')" href=""><span class="glyphicon glyphicon-share icon-gray1 marginl-5"></span></a>
+                    </div>
+                </div>
+                <div class="ulcontentBox">
+                    <table class="defaultTable1" style="width: 100%">
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="">
+                            </th>
+                            <th>姓名（账号）</th>
+                            <th>角色</th>
+                            <th style="width: 78px;">操作</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="">
+                            </td>
+                            <td style="white-space: nowrap;">张三（10002837)</td>
+                            <td style="padding: 10px 15px;">角色名称1；角色名称2；角色名称2；角色名称2；角色名称2；角色名称2；角色名称2；角色名称2；角色名称2；角色名称2；角</td>
+                            <td>
+                                <a ng-click="open('projectmemberInfo')" href="">
+                                    <span class="glyphicon glyphicon-edit icon-gray1"></span>
+                                </a>
+                                <a href="" class="marginl-5">
+                                    <span class="glyphicon glyphicon-trash icon-gray2"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,117 @@
+<div class="cmainBox">
+    <div class="titleBox fix">
+        <div class="title floatleft">个人资料</div>
+        <div class="floatright">
+            <a ui-sref="personalcenter.info({leftnav:1})" href="" class="editInfo floatright">返回</a>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="contentBox">
+        <div class="personalInfo">
+            <ul>
+                <li class="clearfix">
+                    <div class=" floatleft infoTitle">
+                        个人信息
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="personalInfoLeft floatleft">
+                        姓名：
+                    </div>
+                    <div class="personalInfoRight floatleft">
+                        <input type="text" required="required" name="" id="" value="张三" />
+                        <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                    </div>
+                </li>
+                <li class="clearfix margint-20">
+                    <div class="personalInfoLeft floatleft">
+                        绑定手机：
+                    </div>
+                    <div class="personalInfoRight floatleft" ng-controller="modalCtrl">
+                        <input readonly="readonly" type="text" required="" name="" id="" value="18912345678" />
+                        <a ng-click="open('changePhone')" href="" class="changeBind" style="margin-left: 35px;">修改绑定</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="personalInfo">
+            <ul>
+                <li class="clearfix">
+                    <div class=" floatleft infoTitle">
+                        业务信息
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="personalInfoLeft floatleft">
+                        企业名称：
+                    </div>
+                    <div class="personalInfoRight floatleft">
+                        <input type="text" name="" id="" value="泽众软件" />
+                        <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                    </div>
+                </li>
+                <li class="clearfix margint-20">
+                    <div class="personalInfoLeft floatleft">
+                        职位：
+                    </div>
+                    <div class="personalInfoRight floatleft">
+                        <input type="text" name="" id="" value="测试工程师" />
+                        <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                    </div>
+                </li>
+                <li class="clearfix margint-20">
+                    <div class="personalInfoLeft floatleft">
+                        行业分类：
+                    </div>
+                    <div class="personalInfoRight floatleft">
+                        <select class="floatleft" style="width: 195px;" name="">
+                            <option value="">软件开发</option>
+                            <option value="">软件开发</option>
+                            <option value="">软件开发</option>
+                        </select>
+                        <select class="floatleft marginl-10" style="width: 195px;" name="">
+                            <option value="">软件开发</option>
+                            <option value="">软件开发</option>
+                            <option value="">软件开发</option>
+                        </select>
+                        <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                    </div>
+                </li>
+                <li class="clearfix margint-20">
+                    <div class="personalInfoLeft floatleft">
+                        主营业务：
+                    </div>
+                    <div class="personalInfoRight floatleft">
+                        <select name="">
+                            <option value="">软件开发</option>
+                            <option value="">软件开发</option>
+                            <option value="">软件开发</option>
+                        </select>
+                        <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                    </div>
+                </li>
+                <li class="clearfix margint-20">
+                    <div class="personalInfoLeft floatleft">
+                        邮箱：
+                    </div>
+                    <div class="personalInfoRight floatleft">
+                        <input type="text" name="" id="" value="" />
+                        <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                    </div>
+                </li>
+                <li class="clearfix margint-20">
+                    <div class="personalInfoLeft floatleft">
+                        公司电话：
+                    </div>
+                    <div class="personalInfoRight floatleft">
+                        <input type="text" name="" id="" value="" />
+                        <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="fix margint-20 marginb-20">
+                <a href="" class="floatleft btn-modal btn-modal-blue">保存</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,120 @@
+<style type="text/css">
+	.personalInfo {
+  margin: 20px 40px; }
+
+.personalInfo ul li {
+  line-height: 40px; }
+
+.personalInfoLeft {
+  width: 70px;
+  font-size: 14px;
+  color: #707070;
+  text-align: right; }
+
+.personalInfoRight {
+  font-size: 14px;
+  color: #313131;
+  margin-left: 10px; }
+
+.personalInfoRight span {
+  margin-right: 35px; }
+  .personalInfo .infoTitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #313131; }
+</style>
+<div class="cmainBox">
+	<div class="titleBox fix">
+		<div class="title floatleft">个人资料</div>
+		<div class="floatright">
+			<a ui-sref="personalcenter.editInfo({leftnav:1})" href="" class="editInfo floatright">编辑资料</a>
+		</div>
+	</div>
+	<div class="line"></div>
+	<div class="contentBox">
+		<div class="personalInfo">
+			<ul>
+				<li class="clearfix">
+					<div class=" floatleft infoTitle">
+						个人信息
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						姓名：
+					</div>
+					<div class="personalInfoRight floatleft">
+						张三
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						绑定手机：
+					</div>
+					<div ng-controller="modalCtrl" class="personalInfoRight floatleft">
+						<span class="tel">18612345675</span>
+						<a ng-click="open('changePhone')"  href="" class="changeBind">修改绑定</a>
+						<a ng-click="open('changePwd')" href="" class="changePassword">修改密码</a>
+					</div>
+				</li>
+			</ul>			
+		</div>
+		<div class="personalInfo">
+			<ul>
+				<li class="clearfix">
+					<div class=" floatleft infoTitle">
+						业务信息
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						企业名称：
+					</div>
+					<div class="personalInfoRight floatleft">
+						泽众软件
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						职位：
+					</div>
+					<div class="personalInfoRight floatleft">
+						测试工程师
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						行业分类：
+					</div>
+					<div class="personalInfoRight floatleft">
+						软件开发
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						主营业务：
+					</div>
+					<div class="personalInfoRight floatleft">
+						软件开发
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						邮箱：
+					</div>
+					<div class="personalInfoRight floatleft">
+						4515156166@163.com
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="personalInfoLeft floatleft">
+						公司电话：
+					</div>
+					<div class="personalInfoRight floatleft">
+						029-45215156
+					</div>
+				</li>
+			</ul>			
+		</div>
+	</div>
+</div>

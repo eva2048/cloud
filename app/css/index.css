@@ -1,0 +1,585 @@
+@charset "UTF-8";
+/* 首页样式 */
+/*banner样式*/
+.bannerBox {
+  width: 100%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  max-width: 1920px;
+  position: relative; }
+  .bannerBox .banner {
+    margin-left: 0px;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    /* Firefox 4 */
+    -webkit-transition: all 1s;
+    /* Safari 和 Chrome */
+    -o-transition: all 1s;
+    /* Opera */
+    position: relative;
+    width: 7680px;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    margin-left: -960px; }
+  .bannerBox .banner .bannerSlide img {
+    float: left;
+    width: 1920px; }
+  .bannerBox .spanBox span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin: 0px 5px;
+    cursor: pointer; }
+  .bannerBox .spanBox {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    width: 100%;
+    text-align: center; }
+  .bannerBox .spanBox .current {
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5; }
+
+/*模块一样式*/
+.indexSection1Box {
+  background: #eee;
+  width: 100%;
+  padding: 100px 0px 20px; }
+
+.indexSection1 {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .indexSection1 h1 {
+    font-size: 34px;
+    color: #1a1a1a;
+    margin-bottom: 100px;
+    text-align: center; }
+  .indexSection1 .show01-a-a {
+    width: 500px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 80px; }
+  .indexSection1 .show01-a-a img {
+    padding-bottom: 30px;
+    margin-right: 20px; }
+  .indexSection1 .show01-a-a h2 {
+    font-size: 24px;
+    color: #313131;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .indexSection1 .show01-a-a p {
+    font-size: 16px;
+    color: #707070;
+    line-height: 24px; }
+
+/*模块二样式*/
+.indexSection2Box {
+  width: 100%;
+  max-width: 1920px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../images/index_indexSection2Box_bg.png) no-repeat center center;
+  background-size: cover;
+  text-align: center; }
+  .indexSection2Box .indexSection2 {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+  .indexSection2Box .indexSection2Title {
+    font-size: 34px;
+    color: #fff;
+    padding: 80px 0px 60px;
+    text-align: center; }
+  .indexSection2Box .indexSection2Content {
+    box-shadow: 0 6px 12px rgba(64, 157, 250, 0.5);
+    width: 550px;
+    padding: 30px 50px;
+    background: #fff; }
+    .indexSection2Box .indexSection2Content .indexSection2Ctitle {
+      font-size: 18px;
+      color: #333;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-weight: bold; }
+    .indexSection2Box .indexSection2Content .indexSection2Cp {
+      font-size: 14px;
+      color: #707070;
+      line-height: 22px;
+      margin-bottom: 14px; }
+
+/* .indexSection2Box {
+    width: 100%;
+    max-width: 1920px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images/index_indexSection2Box_bg.png) no-repeat center center;
+    text-align: center;
+    .btnlink {
+        display: inline-block;
+        margin-top: 180px;
+        padding: 15px 48px;
+        font-size: 22px;
+        color: #136df3;
+        font-weight: bold;
+        border-radius: 30px;
+        background: #fff;
+        text-align: center;
+        transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        Firefox 4
+        -webkit-transition: all 0.6s;
+        Safari 和 Chrome
+        -o-transition: all 0.6s;
+        Opera
+    }
+    &:hover {
+        .btnlink {
+            -webkit-box-shadow: 0 0px 12px rgba(43, 174, 242, 1);
+            box-shadow: 0 0px 12px rgba(43, 174, 242, 1);
+            margin-top: 170px;
+        }
+    }
+} */
+.indexSection3Box {
+  width: 100%;
+  padding: 130px 0px; }
+  .indexSection3Box .products {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .indexSection3Box .products ul li {
+      display: inline-block;
+      position: relative;
+      float: left;
+      width: 380px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      border: 1px solid #dcdcdc;
+      padding: 25px 35px 90px;
+      margin: 0px 8px; }
+      .indexSection3Box .products ul li:hover {
+        -webkit-box-shadow: 0 0px 12px #136df3;
+        box-shadow: 0 0px 12px #136df3; }
+      .indexSection3Box .products ul li .title {
+        color: #136df3;
+        font-weight: bold; }
+        .indexSection3Box .products ul li .title img {
+          width: 74px;
+          height: 66px;
+          margin-right: 10px; }
+        .indexSection3Box .products ul li .title h1 {
+          font-size: 18px;
+          margin-top: 5px;
+          max-width: 220px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .indexSection3Box .products ul li .title h2 {
+          font-size: 20px;
+          margin-top: 10px;
+          max-width: 220px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+      .indexSection3Box .products ul li .content {
+        font-size: 16px;
+        line-height: 24px;
+        color: #707070;
+        margin-top: 10px;
+        height: 80px;
+        overflow: hidden; }
+      .indexSection3Box .products ul li .btnlink {
+        text-align: center;
+        position: absolute;
+        display: block;
+        bottom: 25px;
+        left: 50%;
+        margin-left: -60px;
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        line-height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background: #1674ff;
+        transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        /* Firefox 4 */
+        -webkit-transition: all 0.6s;
+        /* Safari 和 Chrome */
+        -o-transition: all 0.6s;
+        /* Opera */ }
+        .indexSection3Box .products ul li .btnlink:hover {
+          -webkit-box-shadow: 0 0px 12px #136df3;
+          box-shadow: 0 0px 12px #136df3;
+          bottom: 30px; }
+
+/* 产品页样式 */
+.productBox .productnavBox {
+  width: 100%;
+  height: 44px;
+  line-height: 42px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; }
+  .productBox .productnavBox .productnav {
+    width: 1200px;
+    margin: 0 auto; }
+    .productBox .productnavBox .productnav h1 {
+      line-height: 42px;
+      font-size: 14px;
+      color: #666; }
+.productBox .productbannerBox {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px; }
+  .productBox .productbannerBox .productImg {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    vertical-align: middle; }
+    .productBox .productbannerBox .productImg::after {
+      content: "";
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle; }
+    .productBox .productbannerBox .productImg img {
+      width: 100%;
+      vertical-align: middle; }
+  .productBox .productbannerBox .productInfo {
+    width: 780px; }
+    .productBox .productbannerBox .productInfo .productName {
+      font-size: 18px;
+      color: #666;
+      padding-top: 10px;
+      line-height: 28px;
+      margin-bottom: 5px;
+      font-weight: bold; }
+    .productBox .productbannerBox .productInfo .productIntro {
+      color: #999;
+      line-height: 24px;
+      font-size: 14px;
+      padding-top: 10px; }
+    .productBox .productbannerBox .productInfo .productPrice {
+      padding: 10px 0px;
+      margin-bottom: 10px;
+      width: 100%;
+      background: #f2f2f2;
+      margin-top: 10px; }
+      .productBox .productbannerBox .productInfo .productPrice .productPrice {
+        color: #E4393c;
+        font-size: 18px; }
+      .productBox .productbannerBox .productInfo .productPrice .dt {
+        line-height: 24px; }
+    .productBox .productbannerBox .productInfo .dt {
+      float: left;
+      padding-left: 10px;
+      color: #999;
+      font-size: 14px; }
+    .productBox .productbannerBox .productInfo .dd {
+      margin-left: 80px; }
+    .productBox .productbannerBox .productInfo .productSetting {
+      padding: 15px 0px 4px;
+      border-top: 1px solid #e5e5e5; }
+      .productBox .productbannerBox .productInfo .productSetting .dd > ul > li {
+        overflow: hidden; }
+      .productBox .productbannerBox .productInfo .productSetting .dd > p {
+        line-height: 32px; }
+        .productBox .productbannerBox .productInfo .productSetting .dd > p .glyphicon {
+          line-height: 32px;
+          color: #1674ff;
+          margin-right: 5px;
+          margin-left: 3px; }
+      .productBox .productbannerBox .productInfo .productSetting .dt {
+        line-height: 32px; }
+      .productBox .productbannerBox .productInfo .productSetting .settingItem {
+        margin-bottom: 4px; }
+      .productBox .productbannerBox .productInfo .productSetting .setSpan {
+        border: 1px solid #e5e5e5;
+        padding: 0px 13px;
+        display: block;
+        white-space: nowrap;
+        float: left;
+        line-height: 32px;
+        margin-right: 7px;
+        margin-bottom: 4px;
+        color: #666; }
+        .productBox .productbannerBox .productInfo .productSetting .setSpan:hover {
+          border-color: #1674ff;
+          color: #1674ff; }
+      .productBox .productbannerBox .productInfo .productSetting .current {
+        border-color: #1674ff;
+        color: #1674ff; }
+    .productBox .productbannerBox .productInfo .productSetting1 {
+      padding: 15px 0px 10px; }
+    .productBox .productbannerBox .productInfo .productButton {
+      padding-top: 14px;
+      border-top: 1px solid #e5e5e5; }
+      .productBox .productbannerBox .productInfo .productButton .button {
+        height: 46px;
+        line-height: 46px;
+        padding: 0 26px;
+        font-size: 18px;
+        font-weight: bold;
+        display: inline-block;
+        float: left; }
+      .productBox .productbannerBox .productInfo .productButton .btn-white {
+        color: #666;
+        border: 1px solid #ccc;
+        font-weight: normal; }
+        .productBox .productbannerBox .productInfo .productButton .btn-white:hover {
+          color: #df3033; }
+      .productBox .productbannerBox .productInfo .productButton .btn-red {
+        background: #1674ff;
+        color: #fff; }
+.productBox .productintroBox {
+  width: 1200px;
+  margin: 0 auto; }
+  .productBox .productintroBox .introTitle {
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1674ff;
+    border-top: 1px solid #1674ff; }
+
+/*购物车样式*/
+.shopcart1Box {
+  background: #f2f2f2;
+  padding: 20px 0px; }
+  .shopcart1Box .shopcart1 {
+    width: 1200px;
+    background: #fff;
+    min-height: 600px;
+    padding: 0px 20px;
+    margin: 0 auto; }
+    .shopcart1Box .shopcart1 .shopcartTitle h1 {
+      font-size: 20px;
+      color: #a0a0a0;
+      font-weight: bold;
+      line-height: 60px; }
+    .shopcart1Box .shopcart1 .shopcartTable .countBox .plusbtn {
+      width: 28px;
+      height: 28px; }
+    .shopcart1Box .shopcart1 .shopcartTotal {
+      margin-top: 30px;
+      line-height: 40px; }
+      .shopcart1Box .shopcart1 .shopcartTotal .count {
+        font-size: 14px;
+        color: #a0a0a0;
+        margin-top: 5px; }
+      .shopcart1Box .shopcart1 .shopcartTotal .tprice {
+        margin-right: 10px;
+        font-size: 14px;
+        color: #313131;
+        margin-left: 15px; }
+        .shopcart1Box .shopcart1 .shopcartTotal .tprice strong {
+          font-size: 24px;
+          margin-left: 10px; }
+
+/*测评服务样式*/
+.evaluationBox .evaBannerBox {
+  width: 100%;
+  max-width: 1920px;
+  height: 400px;
+  margin: 0 auto;
+  background: url(../images/evaBannerBox.jpg) no-repeat center center; }
+  .evaluationBox .evaBannerBox .evaBanner {
+    width: 1200px;
+    margin: 0 auto;
+    color: #fff; }
+  .evaluationBox .evaBannerBox .evaBannerContent {
+    float: right;
+    width: 500px;
+    margin-top: 100px; }
+    .evaluationBox .evaBannerBox .evaBannerContent h1 {
+      font-size: 24px;
+      margin-bottom: 15px; }
+    .evaluationBox .evaBannerBox .evaBannerContent p {
+      font-size: 16px;
+      line-height: 28px; }
+.evaluationBox .evastepBox {
+  width: 100%;
+  background: #fff; }
+  .evaluationBox .evastepBox .evastep {
+    width: 900px;
+    margin: 0 auto;
+    padding: 66px 0px 100px; }
+    .evaluationBox .evastepBox .evastep .evastepTitle {
+      position: relative;
+      width: 500px;
+      margin: 0 auto; }
+      .evaluationBox .evastepBox .evastep .evastepTitle .evastepTitlebg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 84px;
+        line-height: 84px;
+        color: rgba(158, 201, 246, 0.3);
+        font-family: Arial;
+        font-size: 112px;
+        text-align: center; }
+      .evaluationBox .evastepBox .evastep .evastepTitle .evastepTitletext {
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color: #333;
+        font-size: 26px;
+        text-align: center;
+        background: #fff; }
+    .evaluationBox .evastepBox .evastep .evastepContent {
+      margin-top: 110px; }
+      .evaluationBox .evastepBox .evastep .evastepContent .evaStep {
+        width: 300px;
+        float: left;
+        margin-bottom: 30px; }
+        .evaluationBox .evastepBox .evastep .evastepContent .evaStep .evastepNum {
+          float: left;
+          font-family: Arial;
+          font-size: 100px;
+          line-height: 100px;
+          margin-right: 10px;
+          color: rgba(158, 201, 246, 0.5); }
+        .evaluationBox .evastepBox .evastep .evastepContent .evaStep .evastepFuc {
+          float: left;
+          margin-top: 20px; }
+          .evaluationBox .evastepBox .evastep .evastepContent .evaStep .evastepFuc h1 {
+            font-size: 18px;
+            color: #333;
+            padding-bottom: 4px;
+            border-bottom: 3px solid #89c5ff;
+            font-weight: bold; }
+          .evaluationBox .evastepBox .evastep .evastepContent .evaStep .evastepFuc p {
+            font-size: 14px;
+            color: #333;
+            line-height: 18px;
+            margin-top: 10px;
+            width: 160px; }
+.evaluationBox .evapriceBox {
+  width: 100%;
+  background: url(../images/index_indexSection2Box_bg.png) no-repeat center center;
+  background-size: cover; }
+  .evaluationBox .evapriceBox .evaprice {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0px; }
+  .evaluationBox .evapriceBox .evapriceTitle {
+    line-height: 40px;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 40px; }
+  .evaluationBox .evapriceBox .evapriceItem {
+    float: left;
+    margin: 0px 50px;
+    width: 400px;
+    padding: 40px 20px 30px;
+    background: #fff;
+    text-align: center; }
+    .evaluationBox .evapriceBox .evapriceItem img {
+      width: 66px; }
+    .evaluationBox .evapriceBox .evapriceItem h1 {
+      font-size: 24px;
+      color: #333;
+      margin-top: 20px; }
+    .evaluationBox .evapriceBox .evapriceItem p {
+      margin-top: 24px;
+      color: #777;
+      font-size: 16px; }
+    .evaluationBox .evapriceBox .evapriceItem h2 {
+      margin-top: 20px;
+      font-size: 16px;
+      margin-bottom: 20px; }
+      .evaluationBox .evapriceBox .evapriceItem h2 em {
+        color: #fe7700;
+        font-size: 18px; }
+.evaluationBox .evadetailBox {
+  width: 100%;
+  background: #f2f2f2; }
+  .evaluationBox .evadetailBox .evadetail {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0px; }
+    .evaluationBox .evadetailBox .evadetail .evadetailTitle {
+      color: #333;
+      font-size: 26px;
+      text-align: center; }
+    .evaluationBox .evadetailBox .evadetail .evadetailItem {
+      float: left;
+      width: 380px;
+      background: #fff;
+      border: 1px solid #259af7;
+      height: 600px;
+      margin: 40px 10px 0px; }
+      .evaluationBox .evadetailBox .evadetail .evadetailItem .evadetailItemTitle {
+        text-align: center;
+        height: 181px;
+        background: url(../images/evadetailItemTitle-bg1.png) no-repeat center center;
+        background-size: cover; }
+        .evaluationBox .evadetailBox .evadetail .evadetailItem .evadetailItemTitle img {
+          display: inline-block;
+          margin-top: 30px; }
+        .evaluationBox .evadetailBox .evadetail .evadetailItem .evadetailItemTitle h1 {
+          line-height: 26px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          font-size: 24px;
+          font-weight: 400;
+          color: #424b52; }
+      .evaluationBox .evadetailBox .evadetail .evadetailItem .evadetailItemTip {
+        background: #259af7;
+        line-height: 60px;
+        color: #fff;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+        text-align: center; }
+      .evaluationBox .evadetailBox .evadetail .evadetailItem .evadetailItemContent {
+        text-align: left;
+        font-size: 14px;
+        color: #666;
+        padding: 0px 20px;
+        line-height: 28px; }
+
+/*申请测评*/
+.applicationBox {
+  width: 100%;
+  min-height: 100%;
+  background: #eeeeee; }
+  .applicationBox .application {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0px; }
+  .applicationBox .applicationTitle {
+    text-align: center;
+    font-size: 24px;
+    color: #313131;
+    margin-bottom: 40px; }
+  .applicationBox .applicationContent {
+    width: 100%;
+    background: #fff;
+    padding: 60px 0px 60px 165px; }
+    .applicationBox .applicationContent .defaultinputBox .title {
+      text-align: right;
+      width: 120px; }
+    .applicationBox .applicationContent .defaultinputBox .inputtext {
+      width: 60%; }
+    .applicationBox .applicationContent .submitBtn {
+      margin-top: 20px;
+      margin-left: 306px; }

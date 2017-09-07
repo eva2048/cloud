@@ -1,0 +1,27 @@
+<div class="cmainBox" ng-controller="cnasCtrl">
+    <div class="titleBox fix">
+        <div class="title floatleft">CNAS流程</div>
+        <div class="searchBox floatright">
+            <input type="text" name="" placeholder="请输入产品名称或订单号">
+            <a href="">搜索</a>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="contentBox">
+    	<div class="mainListBox">
+    		<ul>
+    			
+	    		<li ng-mouseover="mouseover()" ng-mouseleave="mouseleave()" ng-repeat="v in item.data">
+	    			<a href="" title="{{v.name}}">{{v.name}}</a>
+	    			<div class="rightIcon floatright" ng-show="isShow" >
+	    				<span class="glyphicon  glyphicon-plus icon-gray1" ui-sref="flowcenter.createflow({leftnav:1})"></span>
+	    				<span ng-controller="modalCtrl" ng-click="open('flowMemberSet')" class="glyphicon glyphicon-user icon-gray1" title="流程人员配置"></span>
+	    				<span class="glyphicon glyphicon-indent-left icon-gray1"></span>
+	    			</div>
+	    		</li>
+	    		
+	    	</ul>
+    	</div>
+    	
+    </div>   
+</div>

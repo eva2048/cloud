@@ -1,0 +1,81 @@
+<style type="text/css">
+</style>
+<div class="topnavBox ctopnavBox">
+    <div class="navBar">
+        <a ui-sref="index" class="navbar-brand floatleft" href="#"><img src="./images/logo.png"></a>
+        <ul class="navBar-nav nav-right floatright">
+            <li class="">
+                <a href="#">
+                    <span style="margin-right: 0px;" class="glyphicon glyphicon-question-sign navicon c-graylight"></span>
+                </a>
+            </li>
+            <span class="splitline"></span>
+            <li class="">
+                <a href="#">
+                    <span class="glyphicon glyphicon-envelope navicon c-graylight"></span>消息
+                </a>
+            </li>
+            <span class="splitline"></span>
+            <li class="navshopcartBox">
+                <a ui-sref="index.shopcart" href="#">
+                    <span class="glyphicon glyphicon-shopping-cart navicon c-blue"></span>购物车<span class="navicon c-blue marginl-5 f-bold">10</span>
+                </a>
+                <div class="shopcartDrop">
+                    <div class="shopcartdropTitle">最近加入商品：</div>
+                    <div class="shopcartdropList">
+                        <ul>
+                            <li class="shopcartdropItem" ng-repeat="v in [1,2,3,4,5]">
+                                <a class="shopcartdropleft1" href="">
+                                    <img class="shopcartdropPic" src="../images/shopcartdropList.png">
+                                </a>
+                                <a class="shopcartdropleft2" href="">
+                                    <p class="shopcartdropName">魅族PRO6PRO6PRO6PRO6PRO6</p>
+                                    <p class="shopcartdropSet">全网公开版 香槟金 32G香槟金香槟金</p>
+                                </a>
+                                <div class="shopcartdropRight">
+                                    <p class="shopcartdropTotal">￥1099x1</p>
+                                    <span class="shopcartdropDel c-red">删除</span>
+                                </div>
+                                <div class="line"></div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="shopcartdropFooter fix">
+                        <span class="">共10件商品</span>
+                        <a ui-sref="index.shopcart" class="btn-blue floatright" href="">去购物车</a>
+                    </div>
+                </div>
+            </li>
+            <span class="splitline"></span>
+            <li class="navdropdown">
+                <a href="#" class="navdropdowna">流程<span class="glyphicon glyphicon-triangle-bottom navicon navicon1"></span></a>
+                <ul class="navdropdownmenu">
+                    <li><a ui-sref="flowcenter.cnas({leftnav:1})" href="">CNAS流程</a></li>
+                    <li><a ui-sref="flowcenter.pending({leftnav:2})" href="">待处理流程</a></li>
+                    <li><a ui-sref="flowcenter.processed({leftnav:3})" href="">已处理流程</a></li>
+                    <li><a ui-sref="flowcenter.launched({leftnav:4})" href="">已发起流程</a></li>
+                    <div class="line"></div>
+                    <li><a ui-sref="flowcenter.projectgroup({leftnav:5})" href="">项目组管理</a></li>
+                </ul>
+            </li>
+            <span class="splitline"></span>
+            <li class="navdropdown">
+                <a href="#" class="navdropdowna">用户名<span class="glyphicon glyphicon-triangle-bottom navicon navicon1"></span></a>
+                <ul class="navdropdownmenu">
+                    <li><a ui-sref="personalcenter.info({leftnav:1})" href="">个人资料</a></li>
+                    <li><a ui-sref="personalcenter.myorder({leftnav:2})" href="">我的订单</a></li>
+                    <div class="line"></div>
+                    <li><a href="">退出</a></li>
+                </ul>
+            </li>
+            <span class="splitline"></span>
+            <li>
+                <a ui-sref="console" class="consolebtn" href="">控制台</a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</div>

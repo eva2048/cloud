@@ -1,0 +1,97 @@
+<style type="text/css">
+</style>
+<div class="topnavBox" ng-init="isLogin=true">
+    <div class="navBar">
+        <a ui-sref="index" class="navbar-brand floatleft" href="#"><img src="./images/logo.png"></a>
+        <ul class="navBar-nav nav-left floatleft">
+            <li class="navdropdown">
+                <a href="" class="navdropdowna">云产品<span class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="navdropdownmenu">
+                    <li><a ui-sref="index.product" href="">TestCenter</a></li>
+                    <li><a ui-sref="index.product" href="">AutoRunner</a></li>
+                </ul>
+            </li>
+            <li class="navdropdown">
+                <a href="" class="navdropdowna">测试服务<span class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="navdropdownmenu">
+                    <li><a ui-sref="index.evaluation" href="">测评服务</a></li>
+                    <li><a href="">真人众测</a></li>
+                </ul>
+            </li>
+            <li><a href="#">技术支持</a></li>
+        </ul>
+        <!-- 未登录 -->
+        <ul ng-hide="isLogin" class="navBar-nav nav-right floatright">
+            <li class="navshopcartBox">
+                <a ui-sref="index.shopcart" href="#">
+                    <span class="glyphicon glyphicon-shopping-cart navicon c-blue"></span>购物车
+                </a>
+                <!-- 购物车为空 -->
+                <div class="shopcartDrop">
+                    <div class="shopcartDropNone">
+                        <img src="../images/shopcartDrop_none.png">
+                        <div class="tip">您还没有登录<br>登录后可查看购物车</div>
+                    </div>
+                </div>
+            </li>
+            <li ng-controller="modalCtrl"><a ng-click="open('login');" href="">登录</a></li>
+            <li ng-controller="modalCtrl"><a class="registerbtn" ng-click="open('register')" href="#">注册</a></li>
+        </ul>
+        <!-- 已登录 -->
+        <ul ng-show="isLogin" class="navBar-nav nav-right floatright">
+            <li class="navshopcartBox">
+                <a ui-sref="index.shopcart" href="#">
+                    <span class="glyphicon glyphicon-shopping-cart navicon c-blue"></span>购物车<span class="navicon c-blue marginl-5 f-bold">10</span>
+                </a>
+                <!-- 购物车为空 -->
+                <div class="shopcartDrop">
+                    <div class="shopcartDropNone">
+                        <img src="../images/shopcartDrop_none.png">
+                        <div class="tip">购物车里没有商品哦</div>
+                    </div>
+                </div>
+                <!-- 购物车不为空 -->
+                <!-- <div class="shopcartDrop">
+                    <div class="shopcartdropTitle">最近加入商品：</div>
+                    <div class="shopcartdropList">
+                        <ul>
+                            <li class="shopcartdropItem" ng-repeat="v in [1,2,3,4,5]">
+                                <a class="shopcartdropleft1" href="">
+                                    <img class="shopcartdropPic" src="../images/shopcartdropList.png">
+                                </a>
+                                <a class="shopcartdropleft2" href="">
+                                    <p class="shopcartdropName">魅族PRO6PRO6PRO6PRO6PRO6</p>
+                                    <p class="shopcartdropSet">全网公开版 香槟金 32G香槟金香槟金</p>
+                                </a>
+                                <div class="shopcartdropRight">
+                                    <p class="shopcartdropTotal">￥1099x1</p>
+                                    <span class="shopcartdropDel c-red">删除</span>
+                                </div>
+                                <div class="line"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shopcartdropFooter fix">
+                        <span class="">共10件商品</span>
+                        <a ui-sref="index.shopcart" class="btn-blue floatright" href="">去购物车</a>
+                    </div>
+                </div> -->
+            </li>
+            <li class="navdropdown">
+                <a href="#" class="navdropdowna">用户名<span class="glyphicon glyphicon-triangle-bottom navicon navicon1"></span></a>
+                <ul class="navdropdownmenu">
+                    <li><a ui-sref="personalcenter.info({leftnav:1})" href="">个人资料</a></li>
+                    <li><a ui-sref="personalcenter.myorder({leftnav:2})" href="">我的订单</a></li>
+                    <div class="line"></div>
+                    <li><a href="" ng-click="isLogin=false">退出</a></li>
+                </ul>
+            </li>
+            <li>
+                <a ui-sref="console" class="consolebtn" href="">控制台</a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</div>

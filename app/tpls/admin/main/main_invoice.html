@@ -1,0 +1,37 @@
+<div class="cmainBox">
+    <div class="titleBox fix">
+        <div class="title floatleft">发票管理</div>
+        <div class="searchBox floatright">
+            <input type="text" name="" placeholder="请输入产品名称或订单号">
+            <a href="">搜索</a>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="contentBox">
+        <div class="fix margint-20 marginb-20">
+            <a ui-sref="personalcenter.applyinvoice({leftnav:5})" href="" class="floatleft btn-modal btn-modal-blue">申请产品发票</a>
+        </div>
+        <table class="defaultTable1">
+            <tr>
+                <th>发票号</th>
+                <th>发票抬头</th>
+                <th>申请时间</th>
+                <th>关联订单</th>
+                <th>发票金额</th>
+                <th>发票类型</th>
+                <th>发票状态</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>13143253643636</td>
+                <td>上海泽众软件公司</td>
+                <td>2017-07-08 14：00</td>
+                <td><a class="a-blue" href="">2429583957367397639</a><br><a class="a-blue" href="">2429583957367397639</a></td>
+                <td>￥380.00</td>
+                <td>增值税普通发票</td>
+                <td>等待发货</td>
+                <td ng-controller="modalCtrl"><a ng-click="open('invoiceDetail')" class="a-blue" href="">查看详情</a><a class="a-blue marginl-10" ng-click="open('adressDetail')" href="">查看收货地址</a></td>
+            </tr>
+        </table>
+    </div>
+</div>

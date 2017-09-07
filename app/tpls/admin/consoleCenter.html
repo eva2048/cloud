@@ -1,0 +1,167 @@
+<div class="consoleBox">
+    <div class="main" ng-controller="consoleCenterCtrl" style="overflow-y: auto;">
+        <div class="notice" ng-hide="closeTr">
+            公告：<span>公告的内容公告的内容公告的内容公告的内容公告的内容公告的内容</span>
+            <div class="closeNotice floatright" ng-click="closeNotice()">✕</div>
+        </div>
+        <div class="messageBox clearfix">
+            <div class="welcome floatleft">
+                <div class="userName">
+                    欢迎，刘天
+                </div>
+                <div class="message">
+                    <a href=""><img src="/images/phone.png" /></a>
+                    <a href=""><img src="/images/message.png" /></a>
+                    <a href=""><img src="/images/user.png" /></a>
+                </div>
+                <ul class="clearfix">
+                    <li>
+                        <a ui-sref="personalcenter.myorder({leftnav:2})" href=""><img src="/images/myorder.png" /> 我的订单</a>
+                    </li>
+                    <li>
+                        <a ui-sref="flowcenter.cnas({leftnav:1})" href=""><img src="/images/flowCenter.png" /> 流程中心</a>
+                    </li>
+                    <li>
+                        <a ui-sref="flowcenter.projectgroup({leftnav:5})" href=""><img src="/images/projectTeam.png" /> 项目组管理</a>
+                    </li>
+                    <li>
+                        <a ui-sref="personalcenter.info({leftnav:1})" href=""><img src="/images/personal.png" /> 个人资料</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="backlog floatleft">
+                <div class="title">
+                    待办事项
+                </div>
+                <div class="unfinished floatleft" style="margin-left: 4%;margin-right: 2%;">
+                    <a ui-sref="personalcenter.myorder({leftnav:2})" href="">
+                        <p>待支付订单</p>
+                        <h1>3</h1>
+                    </a>
+                </div>
+                <div class="unfinished floatleft" style="margin-left: 2%;margin-right: 4%;">
+                    <a ui-sref="flowcenter.pending({leftnav:2})" href="">
+                        <p>待处理流程</p>
+                        <h1>4</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="evaluationSservice floatleft">
+                <div class="title">
+                    我的评测服务
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <h5>评测申请</h5>
+                            <h3>1</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h5>进行中</h5>
+                            <h3>3</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h5>评测申请</h5>
+                            <h3>3</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="myCloudProduct">
+            <div class="title">
+                我的云产品
+            </div>
+            <ul class="clearfix">
+                <li>
+                    <div class="productName">
+                        <img src="/images/TC.png" />
+                        <span title="测试管理工具（TestCenter）">测试管理工具（TestCenter）</span>
+                        <a href="" class="toggleBtn floatright">启用</a>
+                    </div>
+                    <div class="line"></div>
+                    <p class="licence">license信息</p>
+                    <div class=" clearfix">
+                        <div class="licenceLeft">
+                            账号：
+                        </div>
+                        <div class="licenceRight">
+                            18512345648
+                        </div>
+                    </div>
+                    <div class="clearfix margint-20">
+                        <div class="licenceLeft">
+                            密码：
+                        </div>
+                        <div class="licenceRight">
+                            1cc1a652b2
+                        </div>
+                    </div>
+                    <div class="clearfix margint-20">
+                        <div class="licenceLeft">
+                            规格：
+                        </div>
+                        <div class="licenceRight">
+                            60用户
+                        </div>
+                    </div>
+                    <div class="clearfix margint-20">
+                        <div class="licenceLeft">
+                            起止时间：
+                        </div>
+                        <div class="licenceRight">
+                            2017-06-10至2017-09-10
+                        </div>
+                    </div>
+                    <a href="" class="renew">续费</a>
+                </li>
+                <li>
+                    <div class="productName">
+                        <img src="/images/TC.png" />
+                        <span title="自动化测试工具（AutoRunner）">自动化测试工具（AutoRunner）</span>
+                        <a href="" class="toggleBtn floatright">启用</a>
+                    </div>
+                    <div class="line"></div>
+                    <p class="licence">license信息</p>
+                    <div class=" clearfix">
+                        <div class="licenceLeft">
+                            账号：
+                        </div>
+                        <div class="licenceRight">
+                            18512345648
+                        </div>
+                    </div>
+                    <div class="clearfix margint-20">
+                        <div class="licenceLeft">
+                            密码：
+                        </div>
+                        <div class="licenceRight">
+                            1cc1a652b2
+                        </div>
+                    </div>
+                    <div class="clearfix margint-20">
+                        <div class="licenceLeft">
+                            规格：
+                        </div>
+                        <div class="licenceRight">
+                            60用户
+                        </div>
+                    </div>
+                    <div class="clearfix margint-20">
+                        <div class="licenceLeft">
+                            起止时间：
+                        </div>
+                        <div class="licenceRight">
+                            2017-06-10至2017-09-10
+                        </div>
+                    </div>
+                    <a href="" class="renew">续费</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

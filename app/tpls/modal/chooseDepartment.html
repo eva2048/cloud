@@ -1,0 +1,58 @@
+<style type="text/css">
+.modal-content .modalBody{
+    padding: 0px;
+}
+</style>
+<div class="modal-header">
+    <div class="modaltitle"><span class="floatleft">选择部门</span></div>
+    <a class="closemodal" href="" ng-click="cancel()"></a>
+</div>
+<div class="modal-body modalBody">
+    <div class="tableListBox">
+        <div class="listTitle">已选部门：<span class="f_blue">用例1</span></div>
+        <div class="listBody">
+            <div>
+                <script type="text/ng-template" id="nodes_renderer.html">
+                    <div class="tree-node tree-node-content treeLine">
+                        <a class="treeToggle" ng-if="node.nodes && node.nodes.length > 0" data-nodrag ng-click="toggle(this)"><img ng-src="{{collapsed?'images/treeBody_close.png':'images/treeBody_open.png'}}"></a>
+                        <input class="treeNodeCheckbox" type="checkbox" name="">
+                        <span ng-show="!this.isEdit" class="treeText">
+                            {{node.title | limitTo:10}}{{node.title.length>5?'...':''}}
+                        </span>
+                    </div>
+                    <ol ui-tree-nodes="" ng-model="node.nodes" ng-class="{hidden: collapsed}">
+                        <li ng-repeat="node in node.nodes" ui-tree-node ng-include="'nodes_renderer.html'">
+                        </li>
+                    </ol>
+                </script>
+                <script type="text/ng-template" id="nodes_renderer1.html">
+                    <div class="tree-node tree-node-content treeLine">
+                        <a class="treeToggle" ng-if="node.nodes && node.nodes.length > 0" data-nodrag ng-click="toggle(this)"><img ng-src="{{collapsed?'images/treeBody_close.png':'images/treeBody_open.png'}}"></a>
+                        <span ng-show="!this.isEdit" class="treeText">
+                            {{node.title | limitTo:10}}{{node.title.length>5?'...':''}}
+                        </span>
+                    </div>
+                    <ol ui-tree-nodes="" ng-model="node.nodes" ng-class="{hidden: collapsed}">
+                        <li ng-repeat="node in node.nodes" ui-tree-node ng-include="'nodes_renderer1.html'">
+                        </li>
+                    </ol>
+                </script>
+                <div ng-init="multSelect=false">
+                    <input type="button" name="" ng-click="multSelect=!multSelect" value="单选/多选">
+                    <div class="col-sm-12">
+                        <div ui-tree="treeOptions" id="tree-root">
+                            <ol ui-tree-nodes ng-model="data">
+                                <li ng-repeat="node in data" ui-tree-node ng-include="multSelect?'nodes_renderer.html':'nodes_renderer1.html'"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="modal-footer">
+    <a href="" class="floatright btn-modal btn-modal-blue marginl-10">确定</a>
+    <a href="" class="floatright btn-modal btn-modal-gray">取消</a>
+</div>

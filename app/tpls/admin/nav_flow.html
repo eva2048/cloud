@@ -1,0 +1,28 @@
+<style type="text/css">
+</style>
+<div class="cleftnavBox">
+    <div class="title">
+        流程中心
+    </div>
+    <div class="line"></div>
+    <div class="link">
+        <ul>
+            <li>
+                <a ng-class="{'current':leftNavNow==1}" ui-sref="flowcenter.cnas({leftnav:1})" href="">CNAS流程<span class="floatright">70</span></a>
+            </li>
+            <li>
+                <a ng-class="{'current':leftNavNow==2}" ui-sref="flowcenter.pending({leftnav:2})" href="">待处理流程<span class="floatright">30</span></a>
+            </li>
+            <li>
+                <a ng-class="{'current':leftNavNow==3}" ui-sref="flowcenter.processed({leftnav:3})" href="">已处理流程<span class="floatright">10</span></a>
+            </li>
+            <li>
+                <a ng-class="{'current':leftNavNow==4}" ui-sref="flowcenter.launched({leftnav:4})" href="">已发起流程<span class="floatright">30</span></a>
+            </li>
+            <div class="line"></div>
+            <li>
+                <a ui-sref="flowcenter.projectgroup({leftnav:5})" ng-class="{'current':leftNavNow==5}" href="">项目组管理</a>
+            </li>
+        </ul>
+    </div>
+</div>

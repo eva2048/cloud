@@ -1,0 +1,218 @@
+<div class="cmainBox" ng-controller="createflowCtrl">
+    <div class="titleBox fix">
+        <div class="title floatleft">流程名字</div>
+    </div>
+    <div class="line"></div>
+    <div class="contentBox">
+        <div class="currentNodeBox">
+            <div class="currentNodeTitle fix">
+                当前节点：测试报告提交-->上传报告
+                <div class="operatingBtn floatright" ng-controller="modalCtrl">
+                    <input type="button" name="" id="" value="保存" ng-click="open('chooseDepartment')" />
+                    <input type="button" name="" id="" value="提交" />
+                    <input type="button" name="" id="" value="取消" />
+                </div>
+            </div>
+<!--             <div class="line"></div> -->
+        </div>
+        <div class="basicInfo">
+            <div class="basicInfoTitle">
+                <div class="floatleft">
+                    基本信息
+                </div>
+                <div class="floatright">
+                    <img src="/images/hide.png" ng-click="basicInfoToggle()" />
+                </div>
+            </div>
+            <div class="basicInfoCont " ng-hide="infoDetail">
+                <div class="line"></div>
+                <ol>
+                    <li class="clearfix">
+                        <div class="listLeft floatleft">
+                            <span class="tipsColor">*</span> 任务名称：
+                        </div>
+                        <div class="listRight floatleft">
+                            <input type="text" style="width: 440px;" required="required" name="" id="" value="" />
+                            <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="listLeft floatleft">
+                            <span class="tipsColor">*</span> 项目名称：
+                        </div>
+                        <div class="listRight floatleft" ng-controller="modalCtrl">
+                            <input type="text" style="width: 414px;float: left;" required="required" name="" id="" value="" />
+                            <i class="glyphicon glyphicon-filter icon-blue1 filter" ng-click="open('chooseProject')"></i>
+                            <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="listLeft floatleft">
+                            <span class="tipsColor">*</span> 项目编号：
+                        </div>
+                        <div class="listRight floatleft">
+                            <input type="text" style="width: 440px" required="required" name="" id="" value="" />
+                            <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="listLeft floatleft">
+                            <span class="tipsColor">*</span> 项目排序：
+                        </div>
+                        <div class="listRight floatleft">
+                            <div class="selectSpan floatleft">
+                                <a href="" class="disabledSpan">-</a>
+                                <input type="" name="" value="1">
+                                <a href="">+</a>
+                            </div>
+                            <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="listLeft floatleft">
+                            <span class="tipsColor">*</span> 申请人：
+                        </div>
+                        <div class="listRight floatleft">
+                            <input type="text" style="width: 200px" required="required" name="" id="" value="管理员" />
+                            <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="listLeft floatleft">
+                            <span class="tipsColor">*</span> 申请时间：
+                        </div>
+                        <div class="listRight floatleft">
+                            <input type="text" class="inputText" style="width: 200px" datepicker-popup="{{format}}" ng-model="dat" is-open="popup1.opened" alt-input-formats="altInputFormats" min-date="dat0" max-date="dat1" ng-click="open1()" close-text="关闭" clear-text="清空" current-text="今天" />
+                            <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                        </div>
+                    </li>
+                    <li class="clearfix" style="height: 70px;">
+                        <div class="listLeft floatleft">
+                            备注：
+                        </div>
+                        <div class="listRight floatleft">
+                            <textarea name="" rows="" cols=""></textarea>
+                            <span class="tips tipsColor floatleft">提示文字提示文字提示文字提示文字提示文字</span>
+                        </div>
+                    </li>
+                </ol>
+                <div class="line"></div>
+                <div class="testReportTable">
+                    <table class="defaultTable1">
+                        <tr>
+                            <th style="width: 33.33%;">检查项</th>
+                            <th style="width: 33.33%;">阶段类型</th>
+                            <th style="width: 33.33%;">是否通过</th>
+                        </tr>
+                        <tr ng-repeat="o in data.list">
+                            <td style="text-align: left;">{{o.checkItem}}</td>
+                            <td>{{o.phaseType}}</td>
+                            <td>{{o.ifPass}}</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="line"></div>
+                <ol>
+                    <li class="clearfix">
+                        <div class="listLeft floatleft">
+                            <span class="tipsColor">*</span> 处理结果：
+                        </div>
+                        <div class="listRight floatleft">
+                            <select name="" class="testReportSelect">
+                                <option value="">通过</option>
+                                <option value="">不通过</option>
+                                <option value="">通过不通过</option>
+                            </select>
+                            <span class="tips tipsColor">下一节点：</span>
+                            <span class="nextNode">项目经理,汇总评审意见</span>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="listLeft floatleft">
+                            <span class="tipsColor">*</span> 处理人选择：
+                        </div>
+                        <div class="listRight floatleft" ng-controller="modalCtrl">
+                            <input type="text" style="width: 200px" required="required" name="" id="" value="" />
+                            <i ng-click="open('chooseHandelpeople')" class="glyphicon glyphicon-filter icon-blue1 filter"></i>
+                            <span class="tips tipsColor">提示文字提示文字提示文字提示文字提示文字</span>
+                        </div>
+                    </li>
+                    <li class="clearfix" style="height: 70px;">
+                        <div class="listLeft floatleft">
+                            <span class="tipsColor">*</span> 处理意见：
+                        </div>
+                        <div class="listRight floatleft">
+                            <textarea name="" rows="" cols=""></textarea>
+                            <span class="tips tipsColor floatleft">提示文字提示文字提示文字提示文字提示文字</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="attachmentInfo">
+            <div class="basicInfoTitle">
+                <div class="floatleft">
+                    附件信息
+                </div>
+                <div class="floatright">
+                    <img src="/images/hide.png" ng-click="attachmentInfoToggle()" />
+                </div>
+            </div>
+            <div class="attachmentInfoCont" ng-hide="attachmentInfo" ng-controller="modalCtrl">
+                <div class="line marginb-10"></div>
+                <div class="operatingBtn" style="margin-bottom: 10px">
+                    <div class="uploadBox floatleft" style="position: relative;">
+                        <!-- <input style="opacity: 0; position: absolute;" type="button" name=""  multiple="multiple"> -->
+                        <input type="button" name="" id="" value="上传"  ng-click="open('chooseFile')" />
+                    </div>
+                    <input type="button" name="" id="" value="下载" />
+                </div>
+                <div class="attachmentTable">
+                    <table class="defaultTable1">
+                        <tr>
+                            <th></th>
+                            <th>
+                                <input type="checkbox" name="" id="" value="" />
+                            </th>
+                            <th>文件名</th>
+                            <th>上传人</th>
+                            <th>上传时间</th>
+                            <th>下载附件</th>
+                            <th>删除附件</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="basicInfoTitle">
+                <div class="floatleft">
+                    历史操作记录
+                </div>
+                <div class="floatright">
+                    <img src="/images/hide.png" ng-click="historyToggle()" />
+                </div>
+            </div>
+            <div class="historyCont" ng-hide="historyInfo">
+                <div class="line"></div>
+                <ol>
+                    <li>
+                        2017-10-10 14:22 张三（18612345678）进行XXXX操作
+                    </li>
+                    <li>
+                        2017-10-10 14:22 张三（18612345678）进行XXXX操作
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

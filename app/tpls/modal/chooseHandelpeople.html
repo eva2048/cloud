@@ -1,0 +1,40 @@
+<style type="text/css">
+
+</style>
+<div class="modal-header">
+    <div class="modaltitle"><span class="floatleft">处理人选择</span></div>
+    <a class="closemodal" href="" ng-click="cancel()"></a>
+</div>
+<div class="modal-body modalBody joinProjectGroup projectmemberInfo" style="padding: 0px;">
+    <div class="modalsearchBox">
+        <div class="modalsearch fix" style="position: relative;">
+            <i class="glyphicon glyphicon-search" style="position: absolute; left: 10px;top: 31px;font-size: 18px;color: #ccc"></i>
+            <input type="" name="" ng-model="filterName" style="width: 100%;padding-left: 40px;">
+        </div>
+    </div>
+    <div class="modalselectedBox" style="max-height: 90px">
+        <span ng-repeat="(i,v) in handles | filter:{selected:true}" class="modalselectedSpan" title="删除">{{v.name}}<em class="delSelected" ng-click="deleteSelect(v.name)"></em></span>
+    </div>
+    <div class="defaultulBox" ng-init="multSelect=true">
+        <input type="button" name="" value="多选/单选" ng-click="multSelect=!multSelect">
+        <div class="ulcontentBox" style="height: 250px;" ng-show="multSelect==true">
+            <ul>
+                <li ng-repeat="v in handles | filter:{name:filterName}">
+                    <input class="floatleft" style="margin-top: 14px;" type="checkbox" name="" ng-model="v.selected">
+                    <span class="marginl-5">{{v.name}}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="ulcontentBox" style="height: 250px;" ng-show="multSelect==false">
+            <ul>
+                <li ng-repeat="v in handles | filter:{name:filterName}" ng-click="chooseSelect(v.name)">
+                    <span class="marginl-5">{{v.name}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <a href="" class="floatright btn-modal btn-modal-blue marginl-10">确定</a>
+    <a href="" class="floatright btn-modal btn-modal-gray">取消</a>
+</div>

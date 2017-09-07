@@ -1,0 +1,104 @@
+<style type="text/css">
+</style>
+<div ng-controller="indexCtrl">
+    <div class="bannerBox" id="bannerBox" ng-mouseenter="cleartimer()" ng-mouseleave="starttimer()">
+        <div class="banner" ng-style="{marginLeft:a}">
+            <div class="bannerSlide" ng-repeat="v in bannerIndex">
+                <a href=""><img ng-src="./images/banner{{v}}.png"></a>
+            </div>
+        </div>
+        <div class="spanBox">
+            <span ng-class="{'current':$index==index}" ng-click="tabClick()" ng-repeat="v in bannerIndex"></span>
+        </div>
+    </div>
+    <div class="indexSection1Box">
+        <div class="indexSection1">
+            <div class="title">测评服务申请流程</div>
+            <div class="procedure">
+                <ul>
+                    <li>
+                        <img src="./images/index_procedure_1.png">
+                        <h1>申请测评</h1>
+                        <h2>第<span>1</span>步</h2>
+                    </li>
+                    <li>
+                        <img src="./images/index_procedure_2.png">
+                        <h1>拟定合同</h1>
+                        <h2>第<span>2</span>步</h2>
+                    </li>
+                    <li>
+                        <img src="./images/index_procedure_3.png">
+                        <h1>产品测评</h1>
+                        <h2>第<span>3</span>步</h2>
+                    </li>
+                    <li>
+                        <img src="./images/index_procedure_4.png">
+                        <h1>材料交付</h1>
+                        <h2>第<span>4</span>步</h2>
+                    </li>
+                    <li>
+                        <img src="./images/index_procedure_5.png">
+                        <h1>客户确认</h1>
+                        <h2>第<span>5</span>步</h2>
+                    </li>
+                    <li>
+                        <img src="./images/index_procedure_6.png">
+                        <h1>测评结束</h1>
+                        <h2>第<span>6</span>步</h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a href="">
+        <div class="indexSection2Box">
+            <span class="btnlink" href="">申请测评</span>
+        </div>
+    </a>
+    <div class="indexSection3Box">
+        <div class="products">
+            <ul>
+                <li>
+                    <div class="title fix">
+                        <img src="./images/index_products_1.png" class="left floatleft">
+                        <div class="right">
+                            <h1>TestCenter</h1>
+                            <h2>测试管理工具（TC）</h2>
+                        </div>
+                    </div>
+                    <p class="content">
+                        迅速建立完善的测试体系,规范测试流程； 提高测试效率与质量,实现对测试的过程管理； 提高测试工程的生产力。
+                    </p>
+                    <a class="btnlink" href="">立即使用</a>
+                </li>
+                <li>
+                    <div class="title fix">
+                        <img src="./images/index_products_1.png" class="left floatleft">
+                        <div class="right">
+                            <h1>AutoRunner</h1>
+                            <h2>自动化测试工具（AR）</h2>
+                        </div>
+                    </div>
+                    <p class="content">
+                        实现功能测试、回归测试的自动化；提高测试执行效率，降低测试人工成本。
+                    </p>
+                    <a class="btnlink" href="">立即使用</a>
+                </li>
+                <li>
+                    <div class="title fix">
+                        <img src="./images/index_products_1.png" class="left floatleft">
+                        <div class="right">
+                            <h1>PerformanceRunner</h1>
+                            <h2>性能测试工具（PR）</h2>
+                        </div>
+                    </div>
+                    <p class="content">
+                        最大限度地缩短测试时间；优化性能和加速应用系统的发布周期。
+                    </p>
+                    <a class="btnlink" href="">立即使用</a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+</div>

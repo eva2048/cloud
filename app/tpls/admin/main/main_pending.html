@@ -1,0 +1,58 @@
+<div class="cmainBox" ng-controller="pendingCtrl">
+	<div class="titleBox fix">
+		<div class="title floatleft">待处理流程</div>
+		<div class="searchBox floatright">
+			<input type="text" name="" placeholder="请输入产品名称或订单号">
+			<a href="">搜索</a>
+		</div>
+	</div>
+	<div class="line"></div>
+	<div class="contentBox">
+		<div class="launchedListBox">
+			<table class="defaultTable1 margint-20">
+				<tr>
+					<th style="width: 40px;"></th>
+					<th style="width: 18.84%;">流程名称</th>
+					<th style="width: 18.84%;">任务名称</th>
+					<th style="width: 9.15%;">创建人</th>
+					<th style="width: 11.65%;">创建时间</th>
+					<th style="width: 11.65%;">任务开始时间</th>
+					<th style="width: 9.15%;">流程状态</th>
+					<th style="min-width: 120px;">当前节点</th>
+					<th style="min-width: 120px;">操作处理</th>
+				</tr>
+				<tr ng-repeat="v in data.lists">
+					<td>{{v.num}}</td>
+					<td>{{v.flowName}}</td>
+					<td>{{v.taskName}}</td>
+					<td>{{v.creater}}</td>
+					<td>{{v.createTime}}</td>
+					<td>{{v.startTime}}</td>
+					<td>{{v.flowState}}</td>
+					<td>{{v.presentNode}}</td>
+					<td class="glyBtn">
+						<span class="glyphicon glyphicon-eye-open icon-blue1" ui-sref="flowcenter.showflow({leftnav:2})"></span>
+						<span class="glyphicon glyphicon-check icon-blue1"></span>
+						<span class="glyphicon glyphicon-indent-left icon-blue1"></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="pageBox">
+            <div class="floatleft pageinfoBox">
+                <span>
+                    共180条，每页显示：
+                    <select>
+                        <option>10</option>
+                        <option>20</option>
+                    </select>
+                    &nbsp;&nbsp;条
+                </span>
+            </div>
+            <div class="floatright">
+                <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm embed-responsive-item" previous-text="上一页" next-text="下一页" first-text="首页" last-text="尾页" max-size="maxSize" rotate="false">
+                </pagination>
+            </div>
+        </div>
+	</div>
+</div>

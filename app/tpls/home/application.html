@@ -1,0 +1,70 @@
+<style type="text/css">
+</style>
+<div class="applicationBox">
+    <div class="application">
+        <div class="applicationTitle">
+            <h1>测评服务申请表</h1>
+        </div>
+        <div class="applicationContent">
+            <div class="defaultinputBox">
+                <div class="title floatleft">委托单位：</div>
+                <input class="floatleft inputnormall inputtext" type="" name="" placeholder="请填写公司或单位名称">
+                <span class="c-red error">该项为必填项</span>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">被测产品：</div>
+                <input class="floatleft inputnormall inputtext" type="" name="" placeholder="请填写被测产品名称">
+                <span class="c-red error">该项为必填项</span>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">测试类型：</div>
+                <select class="floatleft selectnormall inputtext">
+                    <option></option>
+                </select>
+                <span class="c-red error">该项为必填项</span>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">产品类型：</div>
+                <select class="floatleft selectnormall inputtext">
+                    <option></option>
+                </select>
+                <span class="c-red error">该项为必填项</span>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">联系人：</div>
+                <input class="floatleft inputnormall inputtext" type="" name="" placeholder="请填写被测产品名称">
+                <span class="c-red error">该项为必填项</span>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">联系电话：</div>
+                <input class="floatleft inputnormall inputtext" type="" name="" placeholder="请填写被测产品名称">
+                <span class="c-red error">该项为必填项</span>
+            </div>
+            <div class="defaultinputBox">
+                <div class="title floatleft">附件：</div>
+                <div class="uploadBox floatleft" style="position: relative;margin-top: 3px;">
+                        <input class="borderbtn" style="opacity: 0; position: absolute;" type="file" name="">
+                        <a class="borderbtn borderbtn-blue" href="">上传附件</a>
+                    </div>
+                <span class="error marginl-10">例如：用户手册、功能列表</span>
+                <div>
+                    <table class="defaultTable1" style="width: 60%;margin-left: 130px;margin-top: 10px;">
+                        <tr>
+                            <th>附件名称</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1 class="ellipsis_160">附件1111111111111111111</h1>
+                            </td>
+                            <td ng-controller="modalCtrl">
+                                <a ng-click="open('default')" class="a-red" href="">删除</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="submitBtn"><a class="btn-blue2" href="">提交申请</a></div>
+        </div>
+    </div>
+</div>
