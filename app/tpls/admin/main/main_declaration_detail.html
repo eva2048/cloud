@@ -1,14 +1,15 @@
 <style type="text/css">
 	.personalInfo {
-		margin: 20px 40px;
+		margin: 20px;
 	}
 	
 	.personalInfo ul {
-		width: 60%;
-		float: left;
+		width: 70%;
 	}
 	
 	.personalInfo ul li {
+		width: 50%;
+		float: left;
 		line-height: 40px;
 	}
 	
@@ -23,6 +24,10 @@
 		font-size: 14px;
 		color: #313131;
 		margin-left: 10px;
+		max-width: 200px;
+		overflow: hidden;
+		text-overflow:ellipsis ;
+		white-space: nowrap;
 	}
 	
 	.personalInfoRight span {
@@ -71,14 +76,14 @@
 	</div>
 	<div class="line"></div>
 	<div class="contentBox">
-		<div class="personalInfo">
+		<div class="personalInfo clearfix">
 			<ul>
 				<li class="clearfix">
 					<div class="personalInfoLeft floatleft">
 						委托单位：
 					</div>
 					<div class="personalInfoRight floatleft">
-						上海泽众
+						<span title="上海泽众上海泽众上海泽众上海泽众上海泽众上海泽众上海泽众上海泽众">上海泽众上海泽众上海泽众上海泽众上海泽众上海泽众上海泽众上海泽众</span>
 					</div>
 				</li>
 				<li class="clearfix">
@@ -126,30 +131,38 @@
 						附件：
 					</div>
 					<div class="personalInfoRight floatleft">
-						<p><span class="attachmentName">123123132112312313211231231321.txt</span>
-							<a href="" class="a-blue">下载</a>
-						</p>
-						<p><span class="attachmentName">1231231321</span>
+						<p>
+							<span class="attachmentName" title="123123132112312313211231231321.txt">123123132112312313211231231321.txt</span>
 							<a href="" class="a-blue">下载</a>
 						</p>
 					</div>
 				</li>
 			</ul>
-			<div class="history floatright">
-				<div class="historyTitle">历史操作</div>
-				<div class="line"></div>
-				<div class="historyDetail">
-					<ol>
-						<li>
-							2017-10-10 14:22  张三（18612345678）进行了XXXXXXX都是 XXXXXsd的XXXXXXXXXXXXXXXXXXXX操作
-							
-						</li>
-						<li>
-							2017-10-10 14:22  张三（18612345678）进行XXXX操作
-						</li>
-					</ol>
-				</div>
-			</div>
+		</div>
+		<div class="orderDetailBox">
+			<div class="orderDetailTitle">历史操作</div>
+			<table class="defaultTable1 margint-20">
+				<tbody>
+					<tr>
+						<th>操作人</th>
+						<th>操作</th>
+						<th>操作时间</th>
+						<th style="width: 40%;">备注</th>
+					</tr>
+					<tr>
+						<td>平台管理员</td>
+						<td>邮寄合同</td>
+						<td>2017-02-28 14：00</td>
+						<td>备注内容</td>
+					</tr>
+					<tr>
+						<td>平台管理员</td>
+						<td>邮寄合同</td>
+						<td>2017-02-28 14：00</td>
+						<td >备注内容备注内容备注内容备注内容备注内容备注内容备注内容备注内容</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </div>
